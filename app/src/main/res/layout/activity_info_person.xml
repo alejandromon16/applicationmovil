@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFEF"
+    tools:context=".InfoPersonActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp">
+
+        <Button
+            android:id="@+id/button_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="start"
+            android:background="@drawable/ic_round_arrow_back" />
+
+        <TextView
+            android:id="@+id/title_screen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/gt_walsheim_pro_regular"
+            android:gravity="center_horizontal"
+            android:text="Informacion de contacto"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/button_search"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="end"
+            android:background="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="@drawable/bgresultcard"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:fontFamily="@font/gt_walsheim_pro_regular"
+            android:text="Nombre Completo" />
+
+        <EditText
+            android:id="@+id/textView_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:fontFamily="@font/gt_walsheim_pro_bold"
+            android:hint="Nombre"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:fontFamily="@font/gt_walsheim_pro_regular"
+            android:text="Correo Electronico" />
+
+        <EditText
+            android:id="@+id/textView_email"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:fontFamily="@font/gt_walsheim_pro_bold"
+            android:hint="ejemplo@gmail.com"
+            android:textColor="@color/black" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/button_send_email"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/primary_button_bg"
+            android:fontFamily="@font/gt_walsheim_pro_bold"
+            android:text="Finalizar reserva"
+            android:textColor="@color/blue_dark" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

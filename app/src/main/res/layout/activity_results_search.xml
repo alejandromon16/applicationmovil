@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFEF"
+    tools:context=".ResultsSearchActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bgresults"
+        android:elevation="15dp"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        android:paddingBottom="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="10dp">
+
+            <Button
+                android:id="@+id/button_back"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/ic_round_arrow_back"
+                android:layout_gravity="start" />
+
+            <TextView
+                android:id="@+id/title_screen"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:gravity="center_horizontal"
+                android:textAlignment="center"
+                android:fontFamily="@font/gt_walsheim_pro_regular"
+                android:text="Resultados de búsqueda"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/button_search"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@color/white"
+                android:layout_gravity="end" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp">
+
+            <TextView
+                android:id="@+id/textView_date_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/gt_walsheim_pro_regular"
+                android:text="Fecha"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/gt_walsheim_pro_bold"
+                android:text="20, Julio 2023"
+                android:textAlignment="textEnd"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView_from_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/gt_walsheim_pro_regular"
+                android:text="Desde"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/textView_from"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/gt_walsheim_pro_bold"
+                android:hint="Santa Cruz de la Sierra"
+                android:textAlignment="textEnd"
+                android:textColor="@color/gray" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView_to_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/gt_walsheim_pro_regular"
+                android:text="Hasta"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/textView_to"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/gt_walsheim_pro_bold"
+                android:text="La Paz"
+                android:textAlignment="textEnd"
+                android:textColor="@color/gray" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textView_offer_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/gt_walsheim_pro_regular"
+                android:textColor="@color/gray" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:paddingTop="200dp"
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

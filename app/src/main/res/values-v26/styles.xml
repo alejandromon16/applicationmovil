@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="boldFontStyle">
+        <item name="android:fontStyle">normal</item>
+        <item name="android:fontWeight">700</item>
+        <item name="android:fontFamily">@font/gt_walsheim_pro_bold</item>
+    </style>
+</resources>

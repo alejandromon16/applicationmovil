@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/background_bus"
+                android:layout_width="match_parent"
+                android:layout_height="420dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/background" />
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/logo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_below="@+id/background_bus"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="-39dp"
+                android:background="@drawable/bgsearch"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/bgsearchcard"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="30dp"
+                    android:paddingVertical="40dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/ic_location"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="@font/gt_walsheim_pro_regular"
+                            android:textColor="@color/gray"
+                            android:text="Origen"/>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/button_origin"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@drawable/buttonshape"
+                        android:fontFamily="@font/gt_walsheim_pro_regular"
+                        android:layout_marginLeft="30dp"
+                        android:text="Selecciona Origen"
+                        android:textAlignment="textStart"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/ic_location"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="@font/gt_walsheim_pro_regular"
+                            android:textColor="@color/gray"
+                            android:text="Destino"/>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/button_destination"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@drawable/buttonshape"
+                        android:fontFamily="@font/gt_walsheim_pro_regular"
+                        android:layout_marginLeft="30dp"
+                        android:text="Selecciona Destino"
+                        android:textAlignment="textStart"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/button_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/primary_button_bg"
+                    android:fontFamily="@font/gt_walsheim_pro_bold"
+                    android:text="Buscar"
+                    android:textColor="@color/blue_dark"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
